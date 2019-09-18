@@ -62,7 +62,8 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "bhagvadgita:build"
+            "browserTarget": "bhagvadgita:build",
+            "port":5000
           },
           "configurations": {
             "production": {
