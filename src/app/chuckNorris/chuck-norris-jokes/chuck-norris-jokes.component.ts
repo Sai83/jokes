@@ -10,7 +10,7 @@ import { ChuckNorris } from 'src/app/shared/chuck-norris';
 })
 export class ChuckNorrisJokesComponent implements OnInit {
 
-  chuckNorrisData: ChuckNorris[] = [];
+   chuckNorrisData: ChuckNorris[];
 
 constructor(private chuckNorrisService: ChuckNorrisService) { }
 
