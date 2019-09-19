@@ -4,6 +4,6 @@ export class ChuckNorris {
 // tslint:disable-next-line:variable-name
 type: string;
 
-value: Array<ChuckNorrisChild>;
+values: Array<ChuckNorrisChild>;
 
 }
