@@ -11,6 +11,10 @@
     "preinstall": " npm install -g angular-cli@latest ng update --all --force",
     "postinstall": "ng build --aot --prod"
   },
+  "engines": {
+    "node": "11.6.0",
+    "npm":"6.9.0"
+  },
   "private": true,
   "dependencies": {
     "@angular-devkit/build-angular": "~0.13.0",
