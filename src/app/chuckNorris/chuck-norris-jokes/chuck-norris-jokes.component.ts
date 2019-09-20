@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ChuckNorrisService } from '../../shared/chuck-norris.service';
-import { Observable } from 'rxjs';
 import { ChuckNorris } from 'src/app/shared/chuck-norris';
+import { ChuckNorrisService } from '../../shared/chuck-norris.service';
 
 @Component({
   selector: 'app-chuck-norris-jokes',
@@ -10,7 +9,7 @@ import { ChuckNorris } from 'src/app/shared/chuck-norris';
 })
 export class ChuckNorrisJokesComponent implements OnInit {
 
-   chuckNorrisData: ChuckNorris[];
+   chuckNorrisData: ChuckNorris[] = [];
 
 constructor(private chuckNorrisService: ChuckNorrisService) { }
 
