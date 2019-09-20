@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable, of } from 'rxjs';
-import { ChuckNorris } from '../shared/chuck-norris';
+import { IChuckNorris } from '../shared/chuck-norris';
 import { catchError } from 'rxjs/operators';
 import { error } from 'util';
 
@@ -13,9 +13,9 @@ export class ChuckNorrisService {
 
   readonly checkNorrisUrl  = 'http://api.icndb.com/jokes/random/5';
 
-  getChuckNorris(): Observable<ChuckNorris[]> {
+  getChuckNorris(): Observable<IChuckNorris[]> {
 
-    return this.http.get<ChuckNorris[]>(this.checkNorrisUrl, {})
+    return this.http.get<IChuckNorris[]>(this.checkNorrisUrl, {})
     .pipe(catchError(this.handleError('getChuckNorris', [])));
   }
 

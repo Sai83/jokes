@@ -1,9 +1,10 @@
-import { ChuckNorrisChild } from '../shared/chuck-norris-child';
+import { IChuckNorrisChild } from '../shared/chuck-norris-child';
 
-export class ChuckNorris {
+export interface IChuckNorris {
 // tslint:disable-next-line:variable-name
 type: string;
 
-values: Array<ChuckNorrisChild>;
+value: IChuckNorrisChild[];
+
 
 }

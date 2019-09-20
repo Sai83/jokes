@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ChuckNorris } from 'src/app/shared/chuck-norris';
+import { IChuckNorris } from 'src/app/shared/chuck-norris';
 import { ChuckNorrisService } from '../../shared/chuck-norris.service';
 
 @Component({
@@ -9,7 +9,7 @@ import { ChuckNorrisService } from '../../shared/chuck-norris.service';
 })
 export class ChuckNorrisJokesComponent implements OnInit {
 
-   chuckNorrisData: ChuckNorris[] = [];
+   chuckNorrisData: IChuckNorris[] = [];
 
 constructor(private chuckNorrisService: ChuckNorrisService) { }
 
