@@ -4,7 +4,7 @@ export interface IChuckNorris {
 // tslint:disable-next-line:variable-name
 type: string;
 
-somePart: IChuckNorrisChild[];
+value: IChuckNorrisChild[];
 
 
 }

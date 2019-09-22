@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "bhagvadgita": {
+    "saiprojects": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/bhagvadgita",
+            "outputPath": "dist/saiprojects",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -62,19 +62,19 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "bhagvadgita:build",
+            "browserTarget": "saiprojects:build",
             "port":5000
           },
           "configurations": {
             "production": {
-              "browserTarget": "bhagvadgita:build:production"
+              "browserTarget": "saiprojects:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "bhagvadgita:build"
+            "browserTarget": "saiprojects:build"
           }
         },
         "test": {
@@ -108,7 +108,7 @@
         }
       }
     },
-    "bhagvadgita-e2e": {
+    "saiprojects-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -117,11 +117,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "bhagvadgita:serve"
+            "devServerTarget": "saiprojects:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "bhagvadgita:serve:production"
+              "devServerTarget": "saiprojects:serve:production"
             }
           }
         },
@@ -137,5 +137,5 @@
       }
     }
   },
-  "defaultProject": "bhagvadgita"
+  "defaultProject": "saiprojects"
 }

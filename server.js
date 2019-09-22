@@ -4,7 +4,7 @@ const path = require("path");
 
 const app = express();
 
-app.use(express.static(__dirname + "/dist/bhagvadgita"));
+app.use(express.static(__dirname + "/dist/saiprojects"));
 
 app.get("/*", function(req, res){
 
